@@ -1,0 +1,401 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*background-image: url("/img/wood.jpg");*/
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 209, 67) 0%, rgb(102, 37, 0) 90%);
+}
+
+.logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #013d68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+.nav ul li a {
+  color: white;
+  padding: 10px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  padding-top: 300px;
+}
+
+.carousel {
+  width: 100%;
+  max-height: 200px;
+}
+
+/* Estilo para el carousel */
+#carouselExampleInterval {
+  max-height: 500px; /* Ajusta este valor según tus necesidades */
+  overflow: hidden; /* Esto es para asegurarse de que nada sobresalga del carousel */
+}
+
+/* Estilo para las imágenes dentro del carousel */
+.carousel-item img {
+  max-height: 500px; /* Ajusta este valor según tus necesidades */
+  width: 100%; /* Asegura que las imágenes se ajusten al ancho del carousel */
+  -o-object-fit: cover;
+     object-fit: cover; /* Esto evita que las imágenes se deformen y se corten adecuadamente */
+  margin: auto; /* Centra la imagen verticalmente (gracias a flexbox) */
+  display: block;
+}
+
+.explorar-cervezas {
+  margin-top: 300px;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.tarjeta-cerveza {
+  width: 50%;
+  padding: 50px;
+}
+
+/*TEXTO QUIENES SOMOS*/
+.historia-conteiner h2 {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.historia-empresa {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.historia-empresa p {
+  text-align: left;
+}
+
+.historia-texto {
+  width: 50%;
+}
+
+/*FIN DE QUIENES SOMOS*/
+/*
+.tarjeta-cerveza a{
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}*/
+.cervezas-hielo {
+  background-image: url(/img/cerveza-hielo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  bottom: 0;
+  width: 50%;
+  height: 500px;
+}
+
+.cervezas-hielo h4 {
+  padding: 20px;
+}
+
+/*TARJETAS CERVEZA*/
+.tarjeta-tipo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*FIN DE TARJETAS CERVEZA*/
+/*INICIO GALERIA CON GRID*/
+.gallery-container {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__item:nth-child(4) {
+  grid-column-start: span 2;
+}
+
+.gallery__title {
+  display: none;
+}
+
+.gallery__item:nth-child(6) {
+  grid-column-start: span 3;
+}
+
+/*FIND DE GALERIA CON GRID*/
+/*TIPOS DE CERVEZA*/
+.tipos-de-cerveza {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+
+.cerveza-individual {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20PX;
+}
+
+.cerveza-individual h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+.cerveza-individual p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.tipo-cerveza-img-pilsener {
+  border-radius: 40px;
+  max-width: 500px;
+  height: 500px;
+  background-image: url(../img/logo-pilsener.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+}
+
+.tipo-cerveza-img-rubia {
+  border-radius: 40px;
+  max-width: 500px;
+  height: 500px;
+  background-image: url(../img/logo-rubia.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+}
+
+.tipo-cerveza-img-roja {
+  border-radius: 40px;
+  max-width: 500px;
+  height: 500px;
+  background-image: url(../img/logo-red-lager.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+}
+
+.tipo-cerveza-img-stout {
+  border-radius: 40px;
+  max-width: 500px;
+  height: 500px;
+  background-image: url(../img/logo-stout.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+}
+
+/*FIN DE TIPOS DE CERVEZA*/
+/*FORMULARIO DE CONTACTO*/
+.formulario {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.conenedor-form {
+  padding: 30px;
+}
+
+.formulario h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*FIN DE FORMULARIO CONTACTO*/
+.quienes-somos-conteiner {
+  background-image: url(/img/quienes-somos.png);
+  width: 1000px;
+  height: auto;
+}
+
+/*AQUI COMIENZA EL FOOTER*/
+.footer {
+  color: white;
+  width: 100%;
+  height: 400px;
+  background-image: url(/img/motivo-negro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*FIN DEL FOOTER*/
+}
+.footer .elementos-footer {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .elementos-footer li {
+  list-style: none;
+}
+.footer .elementos-footer li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+.footer .elementos-footer li a:hover {
+  color: orange;
+  transition: 0.4s;
+}
+.footer .redes-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .redes-footer a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 300px;
+  font-size: 4.1rem;
+}
+.footer .facebook {
+  color: #316FF6;
+}
+.footer .ig-logo {
+  background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  border-radius: 20px;
+  text-align: center;
+}
+.footer .info-derechos-footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .footer .logo {
+    display: none;
+  }
+  .footer .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: 2px solid red;
+  }
+  .footer .cervezas-hielo {
+    background-image: url(/img/cerveza-hielo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 50%;
+    height: 500px;
+  }
+  .footer .tarjeta-cerveza p {
+    display: none;
+  }
+  .footer .card-body {
+    display: none;
+  }
+  .footer .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+  }
+  .footer .gallery__item:nth-child(4) {
+    grid-column-start: span 1;
+  }
+  .footer .gallery__title {
+    display: none;
+  }
+  .footer .gallery__item:nth-child(6) {
+    grid-column-start: span 1;
+  }
+}/*# sourceMappingURL=styles.css.map */
