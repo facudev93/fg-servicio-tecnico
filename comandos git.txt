@@ -1,0 +1,14 @@
+Titulo: Contactanos
+Nombre, Apellido, Email, Escribe tu mensaje, boton enviar negro con letras blancas.
+Texto abajo: ¡Gracias por tu mensaje!
+
+Fondo blanco. Letras Negras.
+
+
+git remote add origin https://github.com/facudev93/fg-servicio-tecnico
+git branch -M main
+git push -u origin main
+
+
+git remote add origin https://github.com/facudev93/fg-servicio-tecnico.git
+git remote set-url origin https://github.com/facudev93/fg-servicio-tecnico.git
