@@ -125,7 +125,7 @@ body {
     font-weight: bold;
 }*/
 .cervezas-hielo {
-  background-image: url(../img/cerveza-hielo.png);
+  background-image: url(/img/cerveza-hielo.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -360,17 +360,14 @@ p {
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .footer .logo {
-    display: none;
-  }
-  .footer .header {
+  .header {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     border: 2px solid red;
   }
-  .footer .cervezas-hielo {
+  .cervezas-hielo {
     background-image: url(/img/cerveza-hielo.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -378,24 +375,24 @@ p {
     width: 50%;
     height: 500px;
   }
-  .footer .tarjeta-cerveza p {
+  .tarjeta-cerveza p {
     display: none;
   }
-  .footer .card-body {
+  .card-body {
     display: none;
   }
-  .footer .gallery-container {
+  .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 300px;
   }
-  .footer .gallery__item:nth-child(4) {
+  .gallery__item:nth-child(4) {
     grid-column-start: span 1;
   }
-  .footer .gallery__title {
+  .gallery__title {
     display: none;
   }
-  .footer .gallery__item:nth-child(6) {
+  .gallery__item:nth-child(6) {
     grid-column-start: span 1;
   }
 }/*# sourceMappingURL=styles.css.map */
