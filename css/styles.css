@@ -20,6 +20,15 @@ body {
   max-width: 200px;
 }
 
+.logo-responsive img {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
 .header {
   font-family: Arial, Helvetica, sans-serif;
   background: #013d68;
@@ -310,33 +319,41 @@ p {
   background-image: url(/img/motivo-negro.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /*FIN DEL FOOTER*/
 }
-.footer .elementos-footer {
+.footer:hover {
+  background-color: yellow;
+}
+
+.elementos-footer {
   padding: 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .elementos-footer li {
+
+.elementos-footer li {
   list-style: none;
 }
-.footer .elementos-footer li a {
+
+.elementos-footer li a {
   text-decoration: none;
   color: white;
   padding: 20px;
   font-size: 1.8rem;
 }
-.footer .elementos-footer li a:hover {
+
+.elementos-footer li a:hover {
   color: orange;
   transition: 0.4s;
 }
-.footer .redes-footer {
+
+.redes-footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .redes-footer a {
+
+.redes-footer a {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -346,26 +363,38 @@ p {
   width: 300px;
   font-size: 4.1rem;
 }
-.footer .facebook {
+
+.facebook {
   color: #316FF6;
 }
-.footer .ig-logo {
+
+.ig-logo {
   background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
   border-radius: 20px;
   text-align: center;
 }
-.footer .info-derechos-footer {
+
+.info-derechos-footer {
   padding: 20px;
   display: flex;
   justify-content: center;
 }
+
+/*FIN DEL FOOTER*/
 @media (max-width: 768px) {
   .header {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    border: 2px solid red;
+  }
+  .logo img {
+    display: none;
+  }
+  .logo-responsive img {
+    max-width: 100px;
+    display: flex;
+    position: relative;
   }
   .cervezas-hielo {
     background-image: url(/img/cerveza-hielo.png);
@@ -394,5 +423,12 @@ p {
   }
   .gallery__item:nth-child(6) {
     grid-column-start: span 1;
+  }
+}
+@media (max-width: 450px) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */
