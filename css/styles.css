@@ -411,11 +411,11 @@ p {
     border: 6px solid yellow;
     gap: 1rem;
   }
-  .tarjeta-cerveza p {
-    display: none;
+  .card:hover{
+    width: 110%;
   }
   .card-body {
-    display: none;
+    display: block;
   }
   .gallery-container {
     display: grid;
@@ -430,6 +430,9 @@ p {
   }
   .gallery__item:nth-child(6) {
     grid-column-start: span 1;
+  }
+  .elementos-footer{
+    flex-direction: column;
   }
 }
 @media (max-width: 450px) {
