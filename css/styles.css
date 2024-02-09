@@ -408,7 +408,6 @@ p {
     transition: 2s;
     display: flex;
     flex-direction: column;
-    border: 6px solid yellow;
     gap: 1rem;
   }
   .card:hover{
