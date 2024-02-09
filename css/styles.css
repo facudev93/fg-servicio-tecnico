@@ -397,7 +397,7 @@ p {
     position: relative;
   }
   .cervezas-hielo {
-    background-image: url(/img/cerveza-hielo.png);
+    background-image: url(./img/cerveza-hielo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
