@@ -404,6 +404,13 @@ p {
     width: 50%;
     height: 500px;
   }
+  .tarjeta-tipo{
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    border: 6px solid yellow;
+    gap: 1rem;
+  }
   .tarjeta-cerveza p {
     display: none;
   }
