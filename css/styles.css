@@ -320,9 +320,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.footer:hover {
-  background-color: yellow;
-}
 
 .elementos-footer {
   padding: 20px 0px;
@@ -397,24 +394,18 @@ p {
     position: relative;
   }
   .cervezas-hielo {
-    background-image: url(./img/cerveza-hielo.png);
+    background-image: url(/img/cerveza-hielo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
     width: 50%;
     height: 500px;
   }
-  .tarjeta-tipo{
-    transition: 2s;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .card:hover{
-    width: 110%;
+  .tarjeta-cerveza p {
+    display: none;
   }
   .card-body {
-    display: block;
+    display: none;
   }
   .gallery-container {
     display: grid;
@@ -429,9 +420,6 @@ p {
   }
   .gallery__item:nth-child(6) {
     grid-column-start: span 1;
-  }
-  .elementos-footer{
-    flex-direction: column;
   }
 }
 @media (max-width: 450px) {
