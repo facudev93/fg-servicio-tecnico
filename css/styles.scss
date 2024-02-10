@@ -389,6 +389,17 @@ body{
     .tarjeta-cerveza p{
         display: none;
     }
+    .tipos-de-cerveza{
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        flex-direction: column;
+    }
+    /*limitacion de altura para tarjetas*/
+    .cerveza-individual{
+        max-width:400px;
+    }
+    /*limitacion de altura para tarjetas*/
     .card-body{
         display: none;
     }
@@ -405,6 +416,9 @@ body{
     }
     .gallery__item:nth-child(6){
         grid-column-start: span 1;
+    }
+    .elementos-footer{
+        flex-direction: column;
     }
 }
 @media (max-width:450px){
